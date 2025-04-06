@@ -1,4 +1,4 @@
-import { QueryOptions } from './types'
+import type { QueryOptions } from './types.js'
 
 /**
  * Converts an object to a URL query string.

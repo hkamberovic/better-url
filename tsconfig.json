@@ -4,13 +4,13 @@
     "types": ["vitest/globals"],
     "lib": ["ES2020", "DOM"],
     "module": "NodeNext",
-    "moduleResolution": "NodeNext",
+    "moduleResolution": "nodenext",
     "strict": true,
     "declaration": true,
     "outDir": "./dist",
-    "rootDir": "./src",
-    "esModuleInterop": true
+    "rootDir": "./",
+    "esModuleInterop": true,
   },
-  "include": ["src"],
+  "include": ["src", "test"],
   "exclude": ["node_modules"]
 }

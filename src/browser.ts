@@ -1,4 +1,4 @@
-import { buildQuery } from './buildQuery'
+import { buildQuery } from './buildQuery.js'
 
 /**
  * Updates the browser URL without reloading.

@@ -1,5 +1,5 @@
-import { describe, expect, it, vi, beforeEach, afterEach } from 'vitest'
-import { buildQuery, mergeQuery, parseQuery, updateUrl } from '../src'
+import { beforeEach, describe, expect, it, vi } from 'vitest'
+import { buildQuery, mergeQuery, parseQuery, updateUrl } from '../src/index.js'
 
 describe('parseQuery', () => {
   it('parses empty string', () => {
@@ -102,7 +102,6 @@ describe('mergeQuery', () => {
 
 describe('Browser Environment', () => {
   beforeEach(() => {
-    // Reset mocks before each test
     window.location.search = ''
     vi.restoreAllMocks()
   })

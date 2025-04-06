@@ -1,5 +1,5 @@
-import { parseQuery, buildQuery } from './'
-import { QueryOptions } from './types'
+import { parseQuery, buildQuery } from './index.js'
+import type { QueryOptions } from './types.js'
 
 /**
  * Merges a query string with new params, overriding existing keys.

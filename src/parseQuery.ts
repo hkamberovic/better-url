@@ -1,4 +1,4 @@
-import { QueryOptions } from './types'
+import type { QueryOptions } from './types.js'
 
 /**
  * Parses a query string into an object with type inference.
