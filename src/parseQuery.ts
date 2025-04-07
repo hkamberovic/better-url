@@ -8,10 +8,7 @@ export function parseQuery<T = Record<string, unknown>>(query: string, options?:
   const params = new URLSearchParams(query)
   const result: Record<string, unknown> = {}
 
-  params.forEach((value, key) => {
-    const decodedValue = decodeURIComponent(value)
-    const decodedKey = decodeURIComponent(key)
-
+  params.forEach((decodedValue, decodedKey) => {
     if (decodedValue === '') {
       result[decodedKey] = ''
       return
